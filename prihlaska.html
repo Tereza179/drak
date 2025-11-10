@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8">
+  <title>Přihláška draka</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="form-page">
+  <h1>Přihláška draka na soutěž</h1>
+
+  <form action="mailto:mjirik@spskt.cz" method="post" enctype="multipart/form-data">
+    <label>Jméno draka: <input type="text" name="jmeno" required></label><br>
+
+    <label>Pohlaví:</label><br>
+    <input type="radio" name="pohlavi" value="samec"> Samec
+    <input type="radio" name="pohlavi" value="samice"> Samice<br>
+
+    <label>Datum narození:
+      <input type="date" name="narozeni" required>
+    </label><br>
+
+    <label>Barva šupin:
+      <input type="color" name="barva" style="width:40px;height:40px;">
+    </label><br>
+
+    <label>Počet sežraných osob:
+      <input type="number" name="pocty" min="0" max="1000">
+    </label><br>
+
+    <label>Délka ohnivého dechu: 
+      <input type="range" name="dech" min="0" max="100"> m
+    </label><br>
+
+    <label><input type="checkbox" name="certifikat"> Mám certifikát nehořlavosti</label><br>
+
+    <label>Letový kód draka:
+      <input type="text" name="kod" pattern="[A-Z]{2}-[0-9]{1,7}[A-Z]" placeholder="např. CZ-48P" required>
+    </label><br>
+
+    <label>Obrázek draka:
+      <input type="file" name="obrazek" accept="image/*">
+    </label><br>
+
+    <label>Disciplíny:</label><br>
+    <select name="disciplíny" multiple size="3">
+      <option>Plivání ohně na cíl</option>
+      <option>Nejhlasitější řev</option>
+      <option>Let mezi sopkami</option>
+    </select><br>
+
+    <fieldset class="ucet">
+      <legend>Účet draka</legend>
+      <label>Email: 
+        <input type="email" name="email" placeholder="mjirik@spskt.cz" required>
+      </label><br>
+      <label>Heslo:
+        <input type="password" name="heslo" required>
+      </label>
+    </fieldset><br>
+
+    <input type="submit" value="Odeslat přihlášku">
+    <input type="reset" value="Reset">
+  </form>
+
+  <p><a href="index.html">⬅ Zpět na informace</a></p>
+</body>
+</html>

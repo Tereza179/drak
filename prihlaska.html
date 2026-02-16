@@ -8,7 +8,7 @@
 <body class="form-page">
   <h1>Přihláška draka na soutěž</h1>
 
-  <form action="mailto:mjirik@spskt.cz" method="post" enctype="multipart/form-data">
+  <form action="https://formsubmit.co/tkurekova@spskt.cz" method="post" enctype="multipart/form-data">
     <label>Jméno draka: <input type="text" name="jmeno" required></label><br>
 
     <label>Pohlaví:</label><br>
@@ -16,7 +16,7 @@
     <input type="radio" name="pohlavi" value="samice"> Samice<br>
 
     <label>Datum narození:
-      <input type="date" name="narozeni" required>
+      <input type="date" name="narozeni">
     </label><br>
 
     <label>Barva šupin:
@@ -34,7 +34,7 @@
     <label><input type="checkbox" name="certifikat"> Mám certifikát nehořlavosti</label><br>
 
     <label>Letový kód draka:
-      <input type="text" name="kod" pattern="[A-Z]{2}-[0-9]{1,7}[A-Z]" placeholder="např. CZ-48P" required>
+      <input type="text" name="kod" pattern="[A-Z]{2}-[0-9]{1,7}[A-Z]" placeholder="např. CZ-48P">
     </label><br>
 
     <label>Obrázek draka:
@@ -59,8 +59,9 @@
     </fieldset><br>
 
     <input type="submit" value="Odeslat přihlášku">
-    <input type="reset" value="Reset">
+    <input type="reset" value="Reset" class="btn-reset">
   </form>
+  <div class="auto">🚗</div>
 
   <p><a href="index.html">⬅ Zpět na informace</a></p>
 </body>

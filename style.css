@@ -32,3 +32,77 @@ fieldset.ucet {
 a {
   color: #ffcc00;
 }
+body{
+ 
+  background-image: url(https://www.bing.com/images/search?view=detailV2&ccid=dsog6GTD&id=A09EDCB087F822246372806F4D21CDE70A288C32&thid=OIP.dsog6GTD3em-eTt4G92gEQHaGi&mediaurl=https%3A%2F%2Fimages-wixmp-ed30a86b8c4ca887773594c2.wixmp.com%2Fi%2F781f3c24-0841-4acd-ad00-642eb820e36a%2Fd9bixmt-ead9042f-2115-4406-b4fe-32cfe514ed0b.png%2Fv1%2Ffill%2Fw_952%2Ch_840%2Cq_70%2Cstrp%2Fdrak_improved_by_17furycynder_d9bixmt-pre.jpg&cdnurl=https%3A%2F%2Fth.bing.com%2Fth%2Fid%2FR.76ca20e864c3dde9be793b781bdda011%3Frik%3DMowoCufNIU1vgA%26pid%3DImgRaw%26r%3D0&exph=840&expw=952&q=drak&FORM=IRPRST&ck=1A5A4D2E79E9424C38FBE15D24CE0986&selectedIndex=4&itb=0&cw=855&ch=851&ajaxhist=0&ajaxserp=0);
+  
+
+}
+input[type="submit"] {
+  transition: all 0.2s ease;
+}
+
+input[type="submit"]:hover {
+  transform: scale(1.2) rotate(2deg);
+  background-color: rgb(111, 22, 33);
+}
+.btn-reset {
+  transition: transform 0.2s ease;
+  background-color: #ffcc00;
+}
+
+/* po najetí */
+.btn-reset:hover {
+  transform: translate(10px, 10px);
+  animation: shake 0.4s infinite;
+}
+
+/* po kliknutí */
+.btn-reset:active {
+  transform: translate(0, 0) scale(1);
+  animation: none;
+}
+
+/* keyframes – třesení */
+@keyframes shake {
+  0%   { transform: translate(10px, 10px) scale(1); }
+  25%  { transform: translate(10px, 10px) scale(1.1); }
+  50%  { transform: translate(10px, 10px) scale(0.9); }
+  75%  { transform: translate(10px, 10px) scale(1.1); }
+  100% { transform: translate(10px, 10px) scale(1); }
+}
+.auto {
+  position:fixed; 
+  top: 0;
+  font-size: 40px;
+  animation: jizda 4s infinite;
+  transform: rotateY(180deg);
+  
+  
+
+
+
+}
+
+/* animace */
+@keyframes jizda {
+    0% {
+        left: -50px;
+        animation-timing-function: ease-in;
+    }
+    100% {
+        left: 100%;
+    }
+}
+
+/* animace */
+@keyframes jizda {
+  0% {
+      left: -100%;
+      animation-timing-function: ease-in;
+  }
+  100% {
+      left: 100%;
+  }
+}
+
